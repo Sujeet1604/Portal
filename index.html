@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <link rel="stylesheet" type="text/css" href="css/slider.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />    
+        <link rel="stylesheet" type="text/css" href="css/app.css" /> 
+
+       
+        <title>Home</title>
+    </head>
+
+    <body ng-app="myApp" lateral-slide-menu-controller >
+
+          <!-- MENU -->
+          <lateral-slide-menu ng-cloak>
+              
+            <ul class="slideUl" ng-controller="selectFilter">
+
+               <li class="slideHead"><center><h3>Categories</h3></center></li> 
+                <li ng-repeat="filter in filters"><a href="#" ng-click="select($index)" ng-class="{selected: $index===selectedIndex}">{{filter.title}}</a></li>
+        
+                
+                
+                
+                
+            </ul>
+          
+          </lateral-slide-menu>
+          
+          <!-- main page -->
+          <div class="main-page lateral-slide-menu-main-page">
+           
+          <a href="" class="toggle-menu" lateral-slide-menu-toggle></a>
+
+
+        
+    <!-- start of carousel -->    
+      
+  <div class="bg"></div>
+<div class="jumbotron">
+  <h1>Bootstrap Jumbotron</h1>
+  <p class="lead">+ Parallax Effect using jQuery</p>
+</div>
+              
+              
+              
+            <div class="content-block-one">
+            <h1>This is a content block</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="content-space-one">
+                <div class="text-center">
+            <h1>This separates content!</h1>
+                    <div class="page-break"></div>
+                <p>Other information can go here</p>
+                </div>
+            </div>
+            <div class="content-block-one">
+            <h1>This is a content block</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="content-space-two">
+                <div class="text-center">
+            <h1>This separates content!</h1>
+                    <div class="page-break"></div>
+                <p>Other information can go here</p>
+                </div>
+            </div>
+            <div class="content-block-one">
+            <h1>This is a content block</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div> 
+ 
+        
+        
+     <!-- end of carousel -->     
+        
+        
+        
+        
+        </div> <!-- script -->
+
+        
+        <script type="text/javascript" src="js/angular.min.js"></script>
+
+       <script type="text/javascript" src="js/angular-animate.min.js"></script>
+        
+         <script type="text/javascript" src="js/ui-bootstrap-tpls-0.14.3.js"></script>
+
+        <script type="text/javascript" src="js/slider.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/app.js"></script>
+
+    </body>
+</html>
